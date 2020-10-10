@@ -1,5 +1,4 @@
-function chartAttack() {
-  const self = {
+const chartAttack = {
     data: [],
     xAxisLabel: [],
     yAxis: [],
@@ -11,7 +10,12 @@ function chartAttack() {
     titleFontColour: "black",
 
     addData: function(num) {
-      self.data.push(num);
+      this.data.push(num);
+    },
+
+    addLabel: function(label) {
+      this.xAxisLabel.push(label);
     }
-  };
-}
+};
+
+
